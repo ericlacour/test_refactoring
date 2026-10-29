@@ -1,3 +1,7 @@
+*> Copyright (c) 2015 @emilybache
+*> SPDX-License-Identifier: MIT
+*> Voir le fichier LICENSE a la racine du depot.
+
 program-id. Inventaire as "Inventaire".
 
 environment division.

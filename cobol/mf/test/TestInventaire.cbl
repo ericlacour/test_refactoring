@@ -1,3 +1,7 @@
+      *> Copyright (c) 2015 @emilybache
+      *> SPDX-License-Identifier: MIT
+      *> Voir le fichier LICENSE a la racine du depot.
+
       *> Test Fixture for Inventaire, Inventaire
 
        copy "mfunit_prototypes.cpy".
