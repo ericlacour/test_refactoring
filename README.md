@@ -123,3 +123,20 @@ Cette version nécessite Micro Focus Visual COBOL / Enterprise Developer
 3. Exécuter `TestInventaire.cbl` avec le lanceur de tests MFUnit de l'IDE.
 
 > Comme en Java, le test fourni échoue volontairement (il attend `fixme`).
+
+## Méthode BMAD
+
+La [méthode BMAD](https://github.com/bmad-code-org/BMAD-METHOD) (v6.12.4,
+module `bmm`) est installée pour Claude Code :
+
+- `_bmad/` : configuration et ressources de la méthode (langue : français)
+- `.claude/skills/bmad-*` : agents et workflows (analyste, PM, architecte,
+  développeur, revue de code...)
+- `_bmad-output/` : dossier de sortie des documents générés
+
+Pour démarrer, lancer Claude Code à la racine du dépôt et invoquer le skill
+`bmad-help`. Pour mettre à jour :
+
+```bash
+npx bmad-method install
+```
