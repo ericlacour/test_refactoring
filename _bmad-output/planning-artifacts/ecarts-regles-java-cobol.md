@@ -27,7 +27,7 @@ Les trois implémentations ont été exécutées sur les mêmes 21 articles, pou
 | E1 | Article standard après échéance | -2 par jour | -1 par jour | Jamais en échéance | Condition inversée (COBOL Gnu l.61, MF l.57) | Haute : valeur de stock fausse dès le 1er jour après la date |
 | E2 | Lingot d'or avec `sellIn` négatif | Inchangé | -1 par jour | `sellIn` stocké positif, inchangé | Même condition inversée | Moyenne : ne survient que si le Lingot est saisi avec un `sellIn` négatif |
 | E3 | Passage en échéance (`sellIn` < 0) | Oui | Oui | Jamais : 0 - 1 donne 1 | `pic 9(4)` non signé (MF l.17-18) | Haute : Vin rouge, Billet et standard ne passent jamais en régime « après échéance » |
-| E4 | Billet de festival après le concert | 0 | 0 | +3 par jour jusqu'à 50, `sellIn` oscillant entre 0 et 1 | Conséquence de E3 | Haute : un billet périmé prend de la valeur au lieu de la perdre |
+| E4 | Billet de festival après le concert | 0 | 0 | +3 le premier jour (constaté) ; ensuite `sellIn` oscille entre 0 et 1 et le billet gagne jusqu'à 50 (déduit) | Conséquence de E3 | Haute : un billet périmé prend de la valeur au lieu de la perdre |
 | E5 | Valeurs saisissables | `int` (±2 milliards) | `s9(2)` : -99 à 99 | `9(4)` : 0 à 9999 | Formats de données | Faible tant que les valeurs restent dans -99..99 |
 | E6 | Format d'échange | Objets en mémoire | Enregistrement de 54 octets | Enregistrement de 58 octets | Formats de données | Moyenne : fichiers non interchangeables entre les deux COBOL |
 | E7 | Saisie d'un article | Constructeur `Item`, sans validation | Programme `Add`, sans validation | Pas de programme de saisie | Périmètre | Faible : aucune des deux ne valide |
