@@ -61,7 +61,7 @@ Le répertoire `cobol/` contient un traitement d'inventaire hérité, adaptation
 ## Assumptions
 
 - La condition `if name is equal to "Lingot d'or"` de la phase après échéance (`Gnu/Inventaire.cbl` l.61, `mf/src/Inventaire.cbl` l.57) est probablement une inversion involontaire du `not equal` du kata ; elle est documentée telle qu'elle s'exécute (CAP-2, CAP-5).
-- Les valeurs des critères de succès sont déduites de la lecture du code ; aucun compilateur COBOL n'était disponible pour les exécuter.
+- Les valeurs des critères de succès ont été confirmées en exécutant `cobol/Gnu/Inventaire.cbl` sous GnuCOBOL 3.1.2.
 
 ## Open Questions
 

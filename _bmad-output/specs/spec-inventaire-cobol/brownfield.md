@@ -17,7 +17,7 @@
 | Point | Où | Effet |
 | --- | --- | --- |
 | Condition probablement inversée | Gnu l.61, MF l.57 : `if name is equal to "Lingot d'or"` | Après échéance, l'article standard ne perd pas 2 points ; le Lingot d'or perd 1 point si son `sell-in` est négatif |
-| Zones non signées (MF) | MF l.17-18 : `pic 9(4)` | `sell-in` ne devient jamais négatif (0 - 1 stocke 1) : aucune règle après échéance ne s'exécute |
+| Zones non signées (MF) | MF l.17-18 : `pic 9(4)` | `sell-in` ne devient jamais négatif (0 - 1 stocke 1) : aucune règle après échéance ne s'exécute ; un Billet périmé oscille entre 0 et 1 jour et gagne 3 points par jour jusqu'à 50 (constaté à l'exécution) |
 | Formats incompatibles | Gnu : 54 octets `s9(2)` ; MF : 58 octets `9(4)` | Un fichier d'une version est illisible par l'autre |
 | `in-items` non fermé (MF) | MF l.73 | Seul `items` est fermé |
 | Test factice (MF) | `TestInventaire.cbl` l.48 | Attend le nom « fixme » pour « foo » : échoue toujours, ne teste aucune règle |
